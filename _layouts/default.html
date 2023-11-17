@@ -8,11 +8,48 @@
 
     <link href="/assets/css/style.css" rel="stylesheet">
 </head>
-<body>
-    <header> Header</header>
+<body class="bg-#F8F7F5">
+    <header class="grid grid-cols-2 items-center px-20 max-w-7xl mx-auto"> 
+            <h3 class="">Name of company</h3>
+            <nav class="justify-self-end ">
+                <a href="#" class="inline-block py-5 px-3">Nav 1</a>
+                <a href="#" class="inline-block py-5 px-3">Nav 2</a>
+                <a href="#" class="inline-block py-5 px-3">Nav 3</a>
+                <a href="#" class="inline-block py-5 px-3">Nav 4</a>
+            </nav>
+            <div class="border-b-2 border-black col-span-full"></div>
+    </header>
 
     {{content}}
 
-    <footer> Footer </footer>
+    <footer class="grid grid-cols-5 border-t-2 border-black section"> 
+        <div>
+            <h4>Lorem ipsum</h4>
+            <nav>
+                <a href="" class="block">Dolor sit amet</a>
+                <a href="" class="block">Consecteur</a>
+                <a href="" class="block">Adipiscing</a>
+                <a href="" class="block">Sed do</a>
+            </nav>
+        </div>
+        <div>
+            <h4>Lorem ipsum</h4>
+            <nav >
+                <a href="" class="block">Dolor sit amet</a>
+                <a href="" class="block">Consecteur</a>
+                <a href="" class="block">Adipiscing</a>
+                <a href="" class="block">Sed do</a>
+            </nav>
+        </div>
+        <div></div>
+        <div class="col-span-2">
+            <form>
+                <h4>Subscribe to our newsletter</h4>
+                <input type ="email" id="email" name="email" class="border solid border-2 border-black">
+                <input type="submit" value="subscribe" class="block">
+            </form>
+           
+        </div>
+    </footer>
 </body>
 </html>

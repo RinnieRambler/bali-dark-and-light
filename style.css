@@ -13,6 +13,24 @@ html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
 
+.text-rotate {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
 
+.section {
+  @apply p-20 max-w-7xl mx-auto;
+}
 
+body {
+  font-family: sans-serif;
+}
 
+h1, h2, h3, a {
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
