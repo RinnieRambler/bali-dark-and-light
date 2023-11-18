@@ -24,10 +24,17 @@ html {
 
 body {
   font-family: sans-serif;
+  color: #3C3C3C;
+  background-color: #F8F7F5;
 }
 
-h1, h2, h3, a {
+.button {
+  
+}
+
+h1, h2, h3, a, label {
   text-transform: uppercase;
+  font-family: 'proxima-nova' sans-serif;
 }
 
 h1, h2 {

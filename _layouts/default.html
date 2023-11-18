@@ -7,8 +7,12 @@
     <title>Document</title>
 
     <link href="/assets/css/style.css" rel="stylesheet">
+
+    <!--------Fonts ------->
+    <link rel="stylesheet" href="https://use.typekit.net/lcj8coq.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lcj8coq.css">
 </head>
-<body class="bg-#F8F7F5">
+<body class="bg-[#F8F7F5] dark:[#3C3C3C]">
     <header class="grid grid-cols-2 items-center px-20 max-w-7xl mx-auto"> 
             <h3 class="">Name of company</h3>
             <nav class="justify-self-end ">
@@ -24,7 +28,7 @@
 
     <footer class="grid grid-cols-5 border-t-2 border-black section"> 
         <div>
-            <h4>Lorem ipsum</h4>
+            <h4 class="uppercase mb-4">Lorem ipsum</h4>
             <nav>
                 <a href="" class="block">Dolor sit amet</a>
                 <a href="" class="block">Consecteur</a>
@@ -33,7 +37,7 @@
             </nav>
         </div>
         <div>
-            <h4>Lorem ipsum</h4>
+            <h4 class="uppercase mb-4">Lorem ipsum</h4>
             <nav >
                 <a href="" class="block">Dolor sit amet</a>
                 <a href="" class="block">Consecteur</a>
@@ -42,11 +46,11 @@
             </nav>
         </div>
         <div></div>
-        <div class="col-span-2">
-            <form>
-                <h4>Subscribe to our newsletter</h4>
-                <input type ="email" id="email" name="email" class="border solid border-2 border-black">
-                <input type="submit" value="subscribe" class="block">
+        <div class="col-span-2 grid justify-items-stretch">
+            <form class="justify-self-end">
+                <h4 class="uppercase mb-4">Subscribe to our newsletter</h4>
+                <input type ="email" id="email" name="email" class="solid border-2 border-black mb-4 w-full uppercase">
+                <input type="submit" value="subscribe" class="block bg-black hover:opacity-60 text-white uppercase font-bold py-2 px-8 ml-auto">
             </form>
            
         </div>

@@ -28,6 +28,7 @@ module.exports = {
       'mono': ['Inconsolata', 'ui-mono', 'monospace'],
       'soft': ['proxima-soft', 'ui-sans-serif'],
       'soft-tight': ['proxima-soft-condensed', 'ui-sans-serif'],
+      'para': ['poppins', 'ui-sans-serif'],
     },
     extend: {
       lineHeight: {
