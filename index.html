@@ -5,11 +5,11 @@ layout: default
 <!-------- Hero image ------->
 <section class="section">
   <h1 class="uppercase pb-10"> This is a fun heading</h1>
-  <img src="/images/moody-website-assets/moody-1.jpg">
+  <img class="min-h-[40vh]" src="/images/moody-website-assets/moody-1.jpg">
 </section>
 
 <!-------- Stats section ------->
-<section class="grid grid-cols-7 px-20 max-w-7xl mx-auto">
+<section class="grid grid-cols-3 md:grid-cols-7 gap-2 px-20 max-w-7xl mx-auto">
   <div>
     <h3>Fact:</h3>
     <h2>900</h2>
@@ -23,7 +23,7 @@ layout: default
     <h2>420K</h2>
   </div>
   <div></div>
-  <div class="col-span-3">
+  <div class="mt-2 col-span-3">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, id nobis, ratione esse sunt iure eum deleniti vero minus excepturi ducimus quasi corrupti a ipsam, harum eaque sapiente ipsum debitis.</p>
   </div>
 </section>
@@ -31,14 +31,14 @@ layout: default
 <!-------- Image block ------->
 
 <section class="section">
-    <div class="text-center max-w-lg pb-10 mx-auto">
+    <div class="md:text-center max-w-lg pb-10 mx-auto">
       <div class="">
-        <h3 class="font-bold text-2xl">Another</h3>
+        <h3 class="font-bold text-xl md:text-2xl">Another</h3>
         <h4 class="text-lg pb-5">Sick heading for attention</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur reiciendis laudantium. Vel, architecto id accusantium earum, necessitatibus sint placeat unde quasi quam perferendis amet perspiciatis tempore et voluptates non?</p>
       </div>
     </div>
-    <div class="grid grid-cols-3 gap-6">
+    <div class="grid md:grid-cols-3 gap-6">
       <div class="">
         <img src="/images/moody-website-assets/moody-2.jpg">
       </div>
@@ -67,7 +67,7 @@ layout: default
 
 <section class="section">
   <h2 class="pb-20">This is a fun heading</h2>
-  <div class="grid grid-cols-2">
+  <div class="grid md:grid-cols-2">
     <div class="pr-20">
       <h3 class="border-b-2 border-black max-w-sm font-bold">Another</h3>
       <h5>Sick heading for attention</h5>
@@ -80,9 +80,11 @@ layout: default
         <a href="#" class="bg-black hover:opacity-60 text-white px-6 py-2">sign up</a>
       </div>
     </div>
-    <div class="relative aspect-portrait flex items-end justify-end">
-      <img src="/images/moody-website-assets/moody-8.jpg" alt="" class="object-cover absolute h-full w-full px-5">
-      <p class="text-rotate rotate-180">credit: some legend</p>
+    <div>
+      <div class="relative aspect-portrait flex items-end justify-end mt-32 md:mt-0">
+        <img src="/images/moody-website-assets/moody-8.jpg" alt="" class="object-cover absolute h-full w-full px-5">
+        <p class="text-rotate rotate-180">credit: some legend</p>
+      </div>
     </div>
   </div>
 </section>
@@ -98,12 +100,12 @@ layout: default
 <!-------- gallery ------->
 
 <section>
-  <div class="section grid grid-cols-[4rem,1fr] gap-2">
-    <div>
-      <h1 class="text-rotate rotate-180">Gallery</h1>
+  <div class="section md:grid grid-cols-[4rem,1fr] gap-2">
+    <div class="">
+      <h1 class="md:text-rotate md:rotate-180">Gallery</h1>
     </div>
     <div>
-      <p class="flex items-end justify-end pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi repellat sit corporis voluptates, delectus praesentium incidunt cumque, odit numquam hic, dolorem ab autem itaque consectetur voluptatum accusamus beatae velit?</p>
+      <p class="flex items-end justify-end pb-5 mt-4 md:mt-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi repellat sit corporis voluptates, delectus praesentium incidunt cumque, odit numquam hic, dolorem ab autem itaque consectetur voluptatum accusamus beatae velit?</p>
       <p class="pb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel corporis voluptatum repellendus, optio iusto illum, magni reprehenderit cumque neque nam, ducimus repellat veritatis voluptas! Molestias et quia animi assumenda deserunt.lorem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum corrupti vero ducimus laboriosam!</p>
       <a href="#" class="bg-black hover:opacity-60 text-white px-6 py-2">sign up</a>
     </div>

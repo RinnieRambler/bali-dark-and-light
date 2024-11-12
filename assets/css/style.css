@@ -423,6 +423,10 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -434,6 +438,21 @@ video {
 }
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
+.mt-20 {
+  margin-top: 5rem;
+}
+.mt-32 {
+  margin-top: 8rem;
 }
 .block {
   display: block;
@@ -458,6 +477,15 @@ video {
 }
 .h-\[25vh\] {
   height: 25vh;
+}
+.min-h-\[75\%\] {
+  min-height: 75%;
+}
+.min-h-\[75vh\] {
+  min-height: 75vh;
+}
+.min-h-\[40vh\] {
+  min-height: 40vh;
 }
 .w-full {
   width: 100%;
@@ -498,6 +526,12 @@ video {
 }
 .grid-cols-\[4rem\2c 1fr\] {
   grid-template-columns: 4rem 1fr;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.items-start {
+  align-items: flex-start;
 }
 .items-end {
   align-items: flex-end;
@@ -592,6 +626,10 @@ video {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -619,6 +657,10 @@ video {
 }
 .text-lg {
   font-size: 1.125rem;;
+  line-height: 1.2;
+}
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.2;
 }
 .font-bold {
@@ -688,6 +730,135 @@ h1, h2 {
   font-size: 2rem;
 }
 
+.burger-button {
+  position:absolute;
+  top: 2.3rem;
+  right: 2.3rem;
+  z-index: 9;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 40px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  /* border-color: green;
+  background-color:#383; */
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+.burger-menu {
+    display: flex;
+    position: absolute;
+    top: 0vh;
+    /* left:100vw; */
+    right: -100vw;
+    /* bottom: 0vh; */
+    background-color: #f4eee0;
+    padding: 73px 21px 21px 21px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+  transition:1s;
+    align-content:space-around;
+  flex-direction:column;
+}
+.burger-menu.active{
+  /* left:75vw; */
+  right:0;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
 .hover\:opacity-60:hover {
   opacity: 0.6;
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+  .md\:grid {
+    display: grid;
+  }
+  .md\:rotate-180 {
+    --tw-rotate: 180deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .md\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md\:items-end {
+    align-items: flex-end;
+  }
+  .md\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .md\:text-center {
+    text-align: center;
+  }
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
 }
