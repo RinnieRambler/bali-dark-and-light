@@ -9,6 +9,10 @@
 
 /* Custom CSS */
 
+
+*{
+  border-color: initial;
+}
 html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
@@ -26,6 +30,20 @@ body {
   font-family: sans-serif;
   color: #3C3C3C;
   background-color: #F8F7F5;
+}
+body.rave{
+ animation: rave .1s linear infinite alternate ;
+  
+}
+@keyframes rave {
+0% {
+  color: #F8F7F5;
+  background-color:  #3C3C3C;
+}  
+100%{
+  color: #3C3C3C;
+  background-color: #F8F7F5;
+}
 }
 
 .button {

@@ -549,10 +549,6 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-.bg-\[\#F8F7F5\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 247 245 / var(--tw-bg-opacity));
-}
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -638,6 +634,10 @@ video {
 
 /* Custom CSS */
 
+
+*{
+  border-color: initial;
+}
 html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
@@ -658,6 +658,20 @@ body {
   font-family: sans-serif;
   color: #3C3C3C;
   background-color: #F8F7F5;
+}
+body.rave{
+ animation: rave .1s linear infinite alternate ;
+  
+}
+@keyframes rave {
+0% {
+  color: #F8F7F5;
+  background-color:  #3C3C3C;
+}  
+100%{
+  color: #3C3C3C;
+  background-color: #F8F7F5;
+}
 }
 
 .button {
